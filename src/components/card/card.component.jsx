@@ -1,8 +1,8 @@
-// import {Component} from "react";
-
 import "./card.styles.css";
 
-const Card = ({monster : {name, id, email}}) => {
+const Card = ({monster}) => {
+
+  const {name, id, email} = monster;
  
   return (
     <div className="card-container" key={id}>
